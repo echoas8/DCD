@@ -1,0 +1,225 @@
+/root/miniconda3/envs/reason/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[16:00:37] Using device: cuda, seed: 55
+[16:00:37] Parsing model identifier. Schema: None, Identifier: RN101
+[16:00:37] Loaded built-in RN101 model config.
+/root/miniconda3/envs/reason/lib/python3.10/site-packages/open_clip/factory.py:450: UserWarning: QuickGELU mismatch between final model config (quick_gelu=False) and pretrained tag 'openai' (quick_gelu=True).
+  warnings.warn(
+[16:00:38] Instantiating model architecture: CLIP
+[16:00:39] Loading full pretrained weights from: /root/autodl-tmp/hf_cache/models--timm--resnet101_clip.openai/snapshots/57ca0a94c6eeabf11fefa2f4c0d1748d43a0de99/open_clip_model.safetensors
+[16:00:39] Final image preprocessing configuration set: {'size': 224, 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+[16:00:39] Model RN101 creation process complete.
+[16:00:39] Detected ModifiedResNet with 5 layers.
+[16:00:39] Model RN101 loaded (5 layers detected).
+[16:00:39] Using simplified RN forward_func for RN101
+[16:00:41] [FER2013] Column 'Usage' not found, using all rows.
+[16:00:41] [FER2013] Loaded 28709 images from /root/autodl-tmp/modelselection/datasets/datasets/fer2013/train.csv
+[16:00:41] [OxfordFlowers] Loaded split='test' with 6149 images from /root/autodl-tmp/modelselection/datasets/datasets/oxford_flowers
+[16:00:41] [OxfordPet] Loaded split='test' with 3669 samples from /root/autodl-tmp/modelselection/datasets/datasets/oxford-pet/annotations/test.txt
+[16:00:41] [RenderedSST2] Loaded 1821 images from /root/autodl-tmp/modelselection/datasets/datasets/renderedsst2/rendered-sst2/test
+[16:00:41] [STL10] Loaded split='test' with 8000 images from /root/autodl-tmp/modelselection/datasets/datasets/stl10/stl10_binary/test_X.bin
+[16:00:41] [SUN397] Loaded split='test' with 19850 images
+[16:00:41] [SVHN] Loaded 26032 images from /root/autodl-tmp/modelselection/datasets/datasets/svhn/test.txt
+[16:00:42] [VOC] Loaded 9963 images from annotations
+[16:00:42] === Reaching milestone N=1 ===
+[16:00:42] 
+🔍 Processing task: car (delta=1)
+[16:00:42] [Cars] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+/root/autodl-tmp/modelselection/frame_v2/framework/conductance.py:20: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=use_amp):
+[16:00:43] Layer layer1: mean=0.000003275
+[16:00:43] Layer layer2: mean=0.000005654
+[16:00:43] Layer layer3: mean=0.000005476
+[16:00:43] Layer layer4: mean=0.000002864
+[16:00:43] Layer attnpool: mean=0.000102456
+[16:00:43] ✅ car updated (N=1).
+[16:00:43] 
+🔍 Processing task: cifar (delta=1)
+[16:00:43] [CIFAR] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+[16:00:43] Layer layer1: mean=0.000006758
+[16:00:43] Layer layer2: mean=0.000010384
+[16:00:43] Layer layer3: mean=0.000007877
+[16:00:43] Layer layer4: mean=0.000003948
+[16:00:43] Layer attnpool: mean=0.000098332
+[16:00:43] ✅ cifar updated (N=1).
+[16:00:43] 
+🔍 Processing task: clevr (delta=1)
+[16:00:44] [CLEVR] 15000 samples from /root/autodl-tmp/modelselection/datasets/datasets/clevr_count/test
+[16:00:44] [CLEVR] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+[16:00:44] Layer layer1: mean=0.000004191
+[16:00:44] Layer layer2: mean=0.000007320
+[16:00:44] Layer layer3: mean=0.000007607
+[16:00:44] Layer layer4: mean=0.000003238
+[16:00:44] Layer attnpool: mean=0.000107972
+[16:00:44] ✅ clevr updated (N=1).
+[16:00:44] 
+🔍 Processing task: country (delta=1)
+[16:00:44] [Country211] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+[16:00:44] Layer layer1: mean=0.000005928
+[16:00:44] Layer layer2: mean=0.000010147
+[16:00:44] Layer layer3: mean=0.000007142
+[16:00:44] Layer layer4: mean=0.000003248
+[16:00:44] Layer attnpool: mean=0.000087508
+[16:00:44] ✅ country updated (N=1).
+[16:00:44] 
+🔍 Processing task: dmlab (delta=1)
+[16:00:44] [DMLab] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:44] Layer layer1: mean=0.000005662
+[16:00:44] Layer layer2: mean=0.000009215
+[16:00:45] Layer layer3: mean=0.000007088
+[16:00:45] Layer layer4: mean=0.000003382
+[16:00:45] Layer attnpool: mean=0.000094665
+[16:00:45] ✅ dmlab updated (N=1).
+[16:00:45] 
+🔍 Processing task: dr (delta=1)
+[16:00:45] [DR] Loaded 42670 paths from /root/autodl-tmp/modelselection/datasets/datasets/diabetic_retinopathy/test.txt
+[16:00:45] [DR] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:45] Layer layer1: mean=0.000006766
+[16:00:45] Layer layer2: mean=0.000010828
+[16:00:45] Layer layer3: mean=0.000007885
+[16:00:45] Layer layer4: mean=0.000003962
+[16:00:45] Layer attnpool: mean=0.000093115
+[16:00:45] ✅ dr updated (N=1).
+[16:00:45] 
+🔍 Processing task: dtd (delta=1)
+[16:00:45] [DTD] Collected 5640 image paths from /root/autodl-tmp/modelselection/datasets/datasets/dtd/labels
+[16:00:45] [DTD] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:45] Layer layer1: mean=0.000014071
+[16:00:45] Layer layer2: mean=0.000020758
+[16:00:45] Layer layer3: mean=0.000010706
+[16:00:45] Layer layer4: mean=0.000006653
+[16:00:45] Layer attnpool: mean=0.000101755
+[16:00:45] ✅ dtd updated (N=1).
+[16:00:45] 
+🔍 Processing task: eurosat (delta=1)
+[16:00:46] [EuroSAT] Collected 27000 images from 10 classes under /root/autodl-tmp/modelselection/datasets/datasets/eurosat/2750
+[16:00:46] [EuroSAT] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:46] Layer layer1: mean=0.000010313
+[16:00:46] Layer layer2: mean=0.000015722
+[16:00:46] Layer layer3: mean=0.000009302
+[16:00:46] Layer layer4: mean=0.000004531
+[16:00:46] Layer attnpool: mean=0.000101166
+[16:00:46] ✅ eurosat updated (N=1).
+[16:00:46] 
+🔍 Processing task: fer2013 (delta=1)
+[16:00:46] [FER2013] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:46] Layer layer1: mean=0.000008028
+[16:00:46] Layer layer2: mean=0.000011974
+[16:00:46] Layer layer3: mean=0.000008884
+[16:00:46] Layer layer4: mean=0.000004981
+[16:00:46] Layer attnpool: mean=0.000105158
+[16:00:46] ✅ fer2013 updated (N=1).
+[16:00:46] 
+🔍 Processing task: gtsrb (delta=1)
+[16:00:46] [GTSRB] Collected 12630 test images.
+[16:00:46] [GTSRB] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:46] Layer layer1: mean=0.000011817
+[16:00:46] Layer layer2: mean=0.000017167
+[16:00:46] Layer layer3: mean=0.000011247
+[16:00:46] Layer layer4: mean=0.000005218
+[16:00:47] Layer attnpool: mean=0.000099776
+[16:00:47] ✅ gtsrb updated (N=1).
+[16:00:47] 
+🔍 Processing task: kitti (delta=1)
+[16:00:47] [KITTI] Collected 711 images from /root/autodl-tmp/modelselection/datasets/datasets/kitti/test.txt
+[16:00:47] [KITTI] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:47] Layer layer1: mean=0.000005479
+[16:00:47] Layer layer2: mean=0.000008391
+[16:00:47] Layer layer3: mean=0.000007147
+[16:00:47] Layer layer4: mean=0.000003468
+[16:00:47] Layer attnpool: mean=0.000088109
+[16:00:47] ✅ kitti updated (N=1).
+[16:00:47] 
+🔍 Processing task: mnist (delta=1)
+[16:00:47] [MNIST] Loaded split='test' with 10000 samples from data/mnist
+[16:00:47] [MNIST] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+[16:00:47] Layer layer1: mean=0.000006461
+[16:00:47] Layer layer2: mean=0.000010685
+[16:00:47] Layer layer3: mean=0.000010039
+[16:00:47] Layer layer4: mean=0.000004681
+[16:00:47] Layer attnpool: mean=0.000102540
+[16:00:47] ✅ mnist updated (N=1).
+[16:00:47] 
+🔍 Processing task: oxford_flowers (delta=1)
+[16:00:47] [OxfordFlowers] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:47] Layer layer1: mean=0.000007437
+[16:00:47] Layer layer2: mean=0.000012169
+[16:00:47] Layer layer3: mean=0.000008476
+[16:00:47] Layer layer4: mean=0.000003733
+[16:00:47] Layer attnpool: mean=0.000099575
+[16:00:47] ✅ oxford_flowers updated (N=1).
+[16:00:47] 
+🔍 Processing task: oxford_pet (delta=1)
+[16:00:47] [OxfordPet] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:47] Layer layer1: mean=0.000007671
+[16:00:48] Layer layer2: mean=0.000012612
+[16:00:48] Layer layer3: mean=0.000008190
+[16:00:48] Layer layer4: mean=0.000003739
+[16:00:48] Layer attnpool: mean=0.000101412
+[16:00:48] ✅ oxford_pet updated (N=1).
+[16:00:48] 
+🔍 Processing task: patch_camelyon (delta=1)
+[16:00:48] [PatchCamelyon] Collected 32768 image paths from /root/autodl-tmp/modelselection/datasets/datasets/patch_camelyon/test.txt
+[16:00:48] [PatchCamelyon] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:48] Layer layer1: mean=0.000011852
+[16:00:48] Layer layer2: mean=0.000017717
+[16:00:48] Layer layer3: mean=0.000009900
+[16:00:48] Layer layer4: mean=0.000005492
+[16:00:48] Layer attnpool: mean=0.000092498
+[16:00:48] ✅ patch_camelyon updated (N=1).
+[16:00:48] 
+🔍 Processing task: renderedsst2 (delta=1)
+[16:00:48] [RenderedSST2] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:48] Layer layer1: mean=0.000006271
+[16:00:48] Layer layer2: mean=0.000010044
+[16:00:48] Layer layer3: mean=0.000009345
+[16:00:48] Layer layer4: mean=0.000004167
+[16:00:49] Layer attnpool: mean=0.000098662
+[16:00:49] ✅ renderedsst2 updated (N=1).
+[16:00:49] 
+🔍 Processing task: resisc45 (delta=1)
+[16:00:49] [RESISC45] Collected 6300 images from /root/autodl-tmp/modelselection/datasets/datasets/resisc45/test.txt
+[16:00:49] [RESISC45] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:49] Layer layer1: mean=0.000010534
+[16:00:49] Layer layer2: mean=0.000015809
+[16:00:49] Layer layer3: mean=0.000009364
+[16:00:49] Layer layer4: mean=0.000004233
+[16:00:49] Layer attnpool: mean=0.000092269
+[16:00:49] ✅ resisc45 updated (N=1).
+[16:00:49] 
+🔍 Processing task: stl10 (delta=1)
+[16:00:49] [STL10] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+[16:00:49] Layer layer1: mean=0.000035777
+[16:00:49] Layer layer2: mean=0.000045008
+[16:00:49] Layer layer3: mean=0.000008976
+[16:00:49] Layer layer4: mean=0.000004380
+[16:00:49] Layer attnpool: mean=0.000092135
+[16:00:49] ✅ stl10 updated (N=1).
+[16:00:49] 
+🔍 Processing task: sun397 (delta=1)
+[16:00:49] [SUN397] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:49] Layer layer1: mean=0.000006047
+[16:00:50] Layer layer2: mean=0.000010350
+[16:00:50] Layer layer3: mean=0.000007190
+[16:00:50] Layer layer4: mean=0.000003608
+[16:00:50] Layer attnpool: mean=0.000108079
+[16:00:50] ✅ sun397 updated (N=1).
+[16:00:50] 
+🔍 Processing task: svhn (delta=1)
+[16:00:50] [SVHN] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:50] Layer layer1: mean=0.000011879
+[16:00:50] Layer layer2: mean=0.000017172
+[16:00:50] Layer layer3: mean=0.000010821
+[16:00:50] Layer layer4: mean=0.000005904
+[16:00:51] Layer attnpool: mean=0.000097139
+[16:00:51] ✅ svhn updated (N=1).
+[16:00:51] 
+🔍 Processing task: voc_pose (delta=1)
+[16:00:51] [VOC] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:00:51] Layer layer1: mean=0.000006012
+[16:00:51] Layer layer2: mean=0.000010294
+[16:00:51] Layer layer3: mean=0.000007791
+[16:00:51] Layer layer4: mean=0.000003606
+[16:00:51] Layer attnpool: mean=0.000091169
+[16:00:51] ✅ voc_pose updated (N=1).
+[16:00:51] ✅ Results saved for milestone 1.

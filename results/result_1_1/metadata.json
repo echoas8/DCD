@@ -1,0 +1,83 @@
+{
+  "cfg": {
+    "model": {
+      "name": "convnext_base_w_320",
+      "pretrained": "laion_aesthetic_s13b_b82k"
+    },
+    "run": {
+      "seed": 42,
+      "gpu_id": "0",
+      "n_per_task": 20,
+      "batch_size": 1,
+      "output_dir": "results",
+      "milestones": [
+        1
+      ]
+    },
+    "tasks": [
+      "car",
+      "cifar",
+      "clevr",
+      "country",
+      "dmlab",
+      "dr",
+      "dtd",
+      "eurosat",
+      "fer2013",
+      "gtsrb",
+      "kitti",
+      "mnist",
+      "oxford_flowers",
+      "oxford_pet",
+      "patch_camelyon",
+      "renderedsst2",
+      "resisc45",
+      "stl10",
+      "sun397",
+      "svhn",
+      "voc_pose"
+    ]
+  },
+  "layer_names": [
+    "stage0_block0",
+    "stage0_block1",
+    "stage0_block2",
+    "stage1_downsample",
+    "stage1_block0",
+    "stage1_block1",
+    "stage1_block2",
+    "stage2_downsample",
+    "stage2_block0",
+    "stage2_block1",
+    "stage2_block2",
+    "stage2_block3",
+    "stage2_block4",
+    "stage2_block5",
+    "stage2_block6",
+    "stage2_block7",
+    "stage2_block8",
+    "stage2_block9",
+    "stage2_block10",
+    "stage2_block11",
+    "stage2_block12",
+    "stage2_block13",
+    "stage2_block14",
+    "stage2_block15",
+    "stage2_block16",
+    "stage2_block17",
+    "stage2_block18",
+    "stage2_block19",
+    "stage2_block20",
+    "stage2_block21",
+    "stage2_block22",
+    "stage2_block23",
+    "stage2_block24",
+    "stage2_block25",
+    "stage2_block26",
+    "stage3_downsample",
+    "stage3_block0",
+    "stage3_block1",
+    "stage3_block2"
+  ],
+  "milestone": 1
+}

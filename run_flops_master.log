@@ -1,0 +1,106 @@
+nohup: ignoring input
+===============================
+Start running by FLOPs plan...
+PLAN=plan.txt
+LOGDIR=logs_flops
+===============================
+
+>>> # GROUP A SUM_FLOPs=755.27
+[GROUP 1] Launching 8 jobs...
+  -> RUN model=ViT-H-14-quickgelu, pretrained=metaclip_fullcc, FLOPs=381.68, log=logs_flops/ViT-H-14-quickgelu__metaclip_fullcc.log
+  -> RUN model=convnext_large_d_320, pretrained=laion2b_s29b_b131k_ft, FLOPs=157.98, log=logs_flops/convnext_large_d_320__laion2b_s29b_b131k_ft.log
+  -> RUN model=convnext_base_w, pretrained=laion2b_s13b_b82k, FLOPs=49.38, log=logs_flops/convnext_base_w__laion2b_s13b_b82k.log
+  -> RUN model=ViT-B-16, pretrained=laion2b_s34b_b88k, FLOPs=41.09, log=logs_flops/ViT-B-16__laion2b_s34b_b88k.log
+  -> RUN model=ViT-B-16, pretrained=datacomp_l_s1b_b8k, FLOPs=41.09, log=logs_flops/ViT-B-16__datacomp_l_s1b_b8k.log
+  -> RUN model=ViT-B-16-quickgelu, pretrained=metaclip_fullcc, FLOPs=41.09, log=logs_flops/ViT-B-16-quickgelu__metaclip_fullcc.log
+  -> RUN model=RN101-quickgelu, pretrained=openai, FLOPs=25.5, log=logs_flops/RN101-quickgelu__openai.log
+  -> RUN model=ViT-B-32-256, pretrained=datacomp_s34b_b86k, FLOPs=17.46, log=logs_flops/ViT-B-32-256__datacomp_s34b_b86k.log
+[GROUP 1] Waiting for all jobs to finish...
+[GROUP 1] ✅ All done.
+
+>>> # GROUP B SUM_FLOPs=769.10
+[GROUP 2] Launching 9 jobs...
+  -> RUN model=ViT-L-14, pretrained=openai, FLOPs=175.33, log=logs_flops/ViT-L-14__openai.log
+  -> RUN model=ViT-L-14, pretrained=datacomp_xl_s13b_b90k, FLOPs=175.33, log=logs_flops/ViT-L-14__datacomp_xl_s13b_b90k.log
+  -> RUN model=ViT-L-14-quickgelu, pretrained=metaclip_fullcc, FLOPs=175.33, log=logs_flops/ViT-L-14-quickgelu__metaclip_fullcc.log
+  -> RUN model=roberta-ViT-B-32, pretrained=laion2b_s12b_b32k, FLOPs=105.87, log=logs_flops/roberta-ViT-B-32__laion2b_s12b_b32k.log
+  -> RUN model=ViT-B-16, pretrained=commonpool_l_laion_s1b_b8k, FLOPs=41.09, log=logs_flops/ViT-B-16__commonpool_l_laion_s1b_b8k.log
+  -> RUN model=EVA02-B-16, pretrained=merged2b_s8b_b131k, FLOPs=41.09, log=logs_flops/EVA02-B-16__merged2b_s8b_b131k.log
+  -> RUN model=RN101-quickgelu, pretrained=yfcc15m, FLOPs=25.5, log=logs_flops/RN101-quickgelu__yfcc15m.log
+  -> RUN model=ViT-B-32, pretrained=laion2b_e16, FLOPs=14.78, log=logs_flops/ViT-B-32__laion2b_e16.log
+  -> RUN model=ViT-B-32, pretrained=commonpool_m_clip_s128m_b4k, FLOPs=14.78, log=logs_flops/ViT-B-32__commonpool_m_clip_s128m_b4k.log
+[GROUP 2] Waiting for all jobs to finish...
+[GROUP 2] ✅ All done.
+
+>>> # GROUP C SUM_FLOPs=764.75
+[GROUP 3] Launching 9 jobs...
+  -> RUN model=ViT-L-14, pretrained=laion400m_e31, FLOPs=175.33, log=logs_flops/ViT-L-14__laion400m_e31.log
+  -> RUN model=ViT-L-14, pretrained=commonpool_xl_clip_s13b_b90k, FLOPs=175.33, log=logs_flops/ViT-L-14__commonpool_xl_clip_s13b_b90k.log
+  -> RUN model=ViT-L-14-quickgelu, pretrained=dfn2b, FLOPs=175.33, log=logs_flops/ViT-L-14-quickgelu__dfn2b.log
+  -> RUN model=xlm-roberta-base-ViT-B-32, pretrained=laion5b_s13b_b90k, FLOPs=105.87, log=logs_flops/xlm-roberta-base-ViT-B-32__laion5b_s13b_b90k.log
+  -> RUN model=ViT-B-16, pretrained=dfn2b, FLOPs=41.09, log=logs_flops/ViT-B-16__dfn2b.log
+  -> RUN model=coca_ViT-B-32, pretrained=laion2b_s13b_b90k, FLOPs=33.34, log=logs_flops/coca_ViT-B-32__laion2b_s13b_b90k.log
+  -> RUN model=RN101, pretrained=yfcc15m, FLOPs=25.5, log=logs_flops/RN101__yfcc15m.log
+  -> RUN model=RN50, pretrained=cc12m, FLOPs=18.18, log=logs_flops/RN50__cc12m.log
+  -> RUN model=ViT-B-32, pretrained=datacomp_xl_s13b_b90k, FLOPs=14.78, log=logs_flops/ViT-B-32__datacomp_xl_s13b_b90k.log
+[GROUP 3] Waiting for all jobs to finish...
+[GROUP 3] ✅ All done.
+
+>>> # GROUP D SUM_FLOPs=1054.05
+[GROUP 4] Launching 1 jobs...
+  -> RUN model=ViT-H-14-378-quickgelu, pretrained=dfn5b, FLOPs=1054.05, log=logs_flops/ViT-H-14-378-quickgelu__dfn5b.log
+[GROUP 4] Waiting for all jobs to finish...
+[GROUP 4] ✅ All done.
+
+>>> # GROUP E SUM_FLOPs=1065.36
+[GROUP 5] Launching 1 jobs...
+  -> RUN model=ViT-bigG-14, pretrained=laion2b_s39b_b160k, FLOPs=1065.36, log=logs_flops/ViT-bigG-14__laion2b_s39b_b160k.log
+[GROUP 5] Waiting for all jobs to finish...
+[GROUP 5] ✅ All done.
+
+>>> # GROUP F SUM_FLOPs=994.55
+[GROUP 6] Launching 3 jobs...
+  -> RUN model=ViT-g-14, pretrained=laion2b_s12b_b42k, FLOPs=581.15, log=logs_flops/ViT-g-14__laion2b_s12b_b42k.log
+  -> RUN model=ViT-L-14-336, pretrained=openai, FLOPs=395.22, log=logs_flops/ViT-L-14-336__openai.log
+  -> RUN model=RN50, pretrained=openai, FLOPs=18.18, log=logs_flops/RN50__openai.log
+[GROUP 6] Waiting for all jobs to finish...
+[GROUP 6] ✅ All done.
+
+>>> # GROUP G SUM_FLOPs=995.68
+[GROUP 7] Launching 2 jobs...
+  -> RUN model=RN50x64, pretrained=openai, FLOPs=552.65, log=logs_flops/RN50x64__openai.log
+  -> RUN model=convnext_xxlarge, pretrained=laion2b_s34b_b82k_augreg_soup, FLOPs=443.03, log=logs_flops/convnext_xxlarge__laion2b_s34b_b82k_augreg_soup.log
+[GROUP 7] Waiting for all jobs to finish...
+[GROUP 7] ✅ All done.
+
+>>> # GROUP H SUM_FLOPs=994.34
+[GROUP 8] Launching 3 jobs...
+  -> RUN model=EVA01-g-14, pretrained=laion400m_s11b_b41k, FLOPs=547.36, log=logs_flops/EVA01-g-14__laion400m_s11b_b41k.log
+  -> RUN model=EVA02-L-14-336, pretrained=merged2b_s6b_b61k, FLOPs=395.16, log=logs_flops/EVA02-L-14-336__merged2b_s6b_b61k.log
+  -> RUN model=RN50x4, pretrained=openai, FLOPs=51.82, log=logs_flops/RN50x4__openai.log
+[GROUP 8] Waiting for all jobs to finish...
+[GROUP 8] ✅ All done.
+
+>>> # GROUP I SUM_FLOPs=987.59
+[GROUP 9] Launching 4 jobs...
+  -> RUN model=nllb-clip-base-siglip, pretrained=v1, FLOPs=472.91, log=logs_flops/nllb-clip-base-siglip__v1.log
+  -> RUN model=ViT-H-14, pretrained=laion2b_s32b_b79k, FLOPs=381.68, log=logs_flops/ViT-H-14__laion2b_s32b_b79k.log
+  -> RUN model=convnext_large_d, pretrained=laion2b_s26b_b102k_augreg, FLOPs=107.5, log=logs_flops/convnext_large_d__laion2b_s26b_b102k_augreg.log
+  -> RUN model=RN101, pretrained=openai, FLOPs=25.5, log=logs_flops/RN101__openai.log
+[GROUP 9] Waiting for all jobs to finish...
+[GROUP 9] ✅ All done.
+
+>>> # GROUP J SUM_FLOPs=805.52
+[GROUP 10] Launching 8 jobs...
+  -> RUN model=nllb-clip-base, pretrained=v1, FLOPs=369.6, log=logs_flops/nllb-clip-base__v1.log
+  -> RUN model=coca_ViT-L-14, pretrained=laion2b_s13b_b90k, FLOPs=214.52, log=logs_flops/coca_ViT-L-14__laion2b_s13b_b90k.log
+  -> RUN model=convnext_base_w_320, pretrained=laion_aesthetic_s13b_b82k, FLOPs=71.94, log=logs_flops/convnext_base_w_320__laion_aesthetic_s13b_b82k.log
+  -> RUN model=ViT-B-16-plus-240, pretrained=laion400m_e31, FLOPs=64.03, log=logs_flops/ViT-B-16-plus-240__laion400m_e31.log
+  -> RUN model=ViT-B-16, pretrained=openai, FLOPs=41.09, log=logs_flops/ViT-B-16__openai.log
+  -> RUN model=ViT-B-32, pretrained=openai, FLOPs=14.78, log=logs_flops/ViT-B-32__openai.log
+  -> RUN model=ViT-B-32-quickgelu, pretrained=laion400m_e31, FLOPs=14.78, log=logs_flops/ViT-B-32-quickgelu__laion400m_e31.log
+  -> RUN model=ViT-B-32-quickgelu, pretrained=metaclip_fullcc, FLOPs=14.78, log=logs_flops/ViT-B-32-quickgelu__metaclip_fullcc.log
+[GROUP 10] Waiting for all jobs to finish...
+[GROUP 10] ✅ All done.
+
+🎉 All groups finished.

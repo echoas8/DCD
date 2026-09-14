@@ -1,0 +1,72 @@
+{
+  "cfg": {
+    "model": {
+      "name": "ViT-L-14-quickgelu",
+      "pretrained": "dfn2b"
+    },
+    "run": {
+      "seed": 42,
+      "gpu_id": "0",
+      "n_per_task": 20,
+      "batch_size": 1,
+      "output_dir": "results",
+      "milestones": [
+        1,
+        5,
+        10,
+        15,
+        20
+      ]
+    },
+    "tasks": [
+      "car",
+      "cifar",
+      "clevr",
+      "country",
+      "dmlab",
+      "dr",
+      "dtd",
+      "eurosat",
+      "fer2013",
+      "gtsrb",
+      "kitti",
+      "mnist",
+      "oxford_flowers",
+      "oxford_pet",
+      "patch_camelyon",
+      "renderedsst2",
+      "resisc45",
+      "stl10",
+      "sun397",
+      "svhn",
+      "voc_pose"
+    ]
+  },
+  "layer_names": [
+    "resblock_0",
+    "resblock_1",
+    "resblock_2",
+    "resblock_3",
+    "resblock_4",
+    "resblock_5",
+    "resblock_6",
+    "resblock_7",
+    "resblock_8",
+    "resblock_9",
+    "resblock_10",
+    "resblock_11",
+    "resblock_12",
+    "resblock_13",
+    "resblock_14",
+    "resblock_15",
+    "resblock_16",
+    "resblock_17",
+    "resblock_18",
+    "resblock_19",
+    "resblock_20",
+    "resblock_21",
+    "resblock_22",
+    "resblock_23"
+  ],
+  "milestone": 15
+}

@@ -1,0 +1,370 @@
+/root/miniconda3/envs/reason/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[16:04:19] Using device: cuda, seed: 55
+[16:04:19] Parsing model identifier. Schema: None, Identifier: ViT-B-32-quickgelu
+[16:04:19] Loaded built-in ViT-B-32-quickgelu model config.
+[16:04:20] Instantiating model architecture: CLIP
+[16:04:21] Loading full pretrained weights from: /root/autodl-tmp/hf_cache/models--timm--vit_base_patch32_clip_224.metaclip_2pt5b/snapshots/11a59be381208279468108c9d8ba02cd3e466748/open_clip_model.safetensors
+[16:04:21] Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+[16:04:21] Model ViT-B-32-quickgelu creation process complete.
+[16:04:22] Detected VisionTransformer with 12 blocks.
+[16:04:22] Model ViT-B-32-quickgelu loaded (12 layers detected).
+[16:04:22] Using ViT forward_func for ViT-B-32-quickgelu
+[16:04:23] [FER2013] Column 'Usage' not found, using all rows.
+[16:04:23] [FER2013] Loaded 28709 images from /root/autodl-tmp/modelselection/datasets/datasets/fer2013/train.csv
+[16:04:23] [OxfordFlowers] Loaded split='test' with 6149 images from /root/autodl-tmp/modelselection/datasets/datasets/oxford_flowers
+[16:04:23] [OxfordPet] Loaded split='test' with 3669 samples from /root/autodl-tmp/modelselection/datasets/datasets/oxford-pet/annotations/test.txt
+[16:04:23] [RenderedSST2] Loaded 1821 images from /root/autodl-tmp/modelselection/datasets/datasets/renderedsst2/rendered-sst2/test
+[16:04:23] [STL10] Loaded split='test' with 8000 images from /root/autodl-tmp/modelselection/datasets/datasets/stl10/stl10_binary/test_X.bin
+[16:04:24] [SUN397] Loaded split='test' with 19850 images
+[16:04:24] [SVHN] Loaded 26032 images from /root/autodl-tmp/modelselection/datasets/datasets/svhn/test.txt
+[16:04:24] [VOC] Loaded 9963 images from annotations
+[16:04:24] === Reaching milestone N=1 ===
+[16:04:24] 
+🔍 Processing task: car (delta=1)
+[16:04:25] [Cars] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+/root/autodl-tmp/modelselection/frame_v2/framework/conductance.py:20: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=use_amp):
+[16:04:25] Layer resblock_0: mean=0.000023121
+[16:04:25] Layer resblock_1: mean=0.000023641
+[16:04:25] Layer resblock_2: mean=0.000023158
+[16:04:25] Layer resblock_3: mean=0.000024350
+[16:04:25] Layer resblock_4: mean=0.000025790
+[16:04:25] Layer resblock_5: mean=0.000027197
+[16:04:25] Layer resblock_6: mean=0.000027499
+[16:04:26] Layer resblock_7: mean=0.000026670
+[16:04:26] Layer resblock_8: mean=0.000024971
+[16:04:26] Layer resblock_9: mean=0.000021038
+[16:04:26] Layer resblock_10: mean=0.000018900
+[16:04:26] Layer resblock_11: mean=0.000007535
+[16:04:26] ✅ car updated (N=1).
+[16:04:26] 
+🔍 Processing task: cifar (delta=1)
+[16:04:26] [CIFAR] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+[16:04:26] Layer resblock_0: mean=0.000022216
+[16:04:26] Layer resblock_1: mean=0.000022876
+[16:04:26] Layer resblock_2: mean=0.000021664
+[16:04:26] Layer resblock_3: mean=0.000022178
+[16:04:26] Layer resblock_4: mean=0.000022352
+[16:04:26] Layer resblock_5: mean=0.000021804
+[16:04:26] Layer resblock_6: mean=0.000021079
+[16:04:26] Layer resblock_7: mean=0.000019714
+[16:04:26] Layer resblock_8: mean=0.000018734
+[16:04:27] Layer resblock_9: mean=0.000016297
+[16:04:27] Layer resblock_10: mean=0.000014313
+[16:04:27] Layer resblock_11: mean=0.000006408
+[16:04:27] ✅ cifar updated (N=1).
+[16:04:27] 
+🔍 Processing task: clevr (delta=1)
+[16:04:27] [CLEVR] 15000 samples from /root/autodl-tmp/modelselection/datasets/datasets/clevr_count/test
+[16:04:27] [CLEVR] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+[16:04:27] Layer resblock_0: mean=0.000013780
+[16:04:27] Layer resblock_1: mean=0.000014600
+[16:04:27] Layer resblock_2: mean=0.000015084
+[16:04:27] Layer resblock_3: mean=0.000015735
+[16:04:27] Layer resblock_4: mean=0.000016457
+[16:04:27] Layer resblock_5: mean=0.000017002
+[16:04:27] Layer resblock_6: mean=0.000016947
+[16:04:27] Layer resblock_7: mean=0.000016393
+[16:04:28] Layer resblock_8: mean=0.000015709
+[16:04:28] Layer resblock_9: mean=0.000014193
+[16:04:28] Layer resblock_10: mean=0.000013563
+[16:04:28] Layer resblock_11: mean=0.000006736
+[16:04:28] ✅ clevr updated (N=1).
+[16:04:28] 
+🔍 Processing task: country (delta=1)
+[16:04:28] [Country211] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+[16:04:28] Layer resblock_0: mean=0.000020736
+[16:04:28] Layer resblock_1: mean=0.000020668
+[16:04:28] Layer resblock_2: mean=0.000019671
+[16:04:28] Layer resblock_3: mean=0.000020030
+[16:04:28] Layer resblock_4: mean=0.000021042
+[16:04:28] Layer resblock_5: mean=0.000021201
+[16:04:28] Layer resblock_6: mean=0.000020772
+[16:04:28] Layer resblock_7: mean=0.000019797
+[16:04:28] Layer resblock_8: mean=0.000018710
+[16:04:29] Layer resblock_9: mean=0.000016897
+[16:04:29] Layer resblock_10: mean=0.000015720
+[16:04:29] Layer resblock_11: mean=0.000006565
+[16:04:29] ✅ country updated (N=1).
+[16:04:29] 
+🔍 Processing task: dmlab (delta=1)
+[16:04:29] [DMLab] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:29] Layer resblock_0: mean=0.000019500
+[16:04:29] Layer resblock_1: mean=0.000019074
+[16:04:29] Layer resblock_2: mean=0.000018453
+[16:04:29] Layer resblock_3: mean=0.000018754
+[16:04:29] Layer resblock_4: mean=0.000019647
+[16:04:29] Layer resblock_5: mean=0.000020160
+[16:04:30] Layer resblock_6: mean=0.000019483
+[16:04:30] Layer resblock_7: mean=0.000018510
+[16:04:30] Layer resblock_8: mean=0.000017013
+[16:04:30] Layer resblock_9: mean=0.000015060
+[16:04:30] Layer resblock_10: mean=0.000014653
+[16:04:30] Layer resblock_11: mean=0.000006584
+[16:04:30] ✅ dmlab updated (N=1).
+[16:04:30] 
+🔍 Processing task: dr (delta=1)
+[16:04:30] [DR] Loaded 42670 paths from /root/autodl-tmp/modelselection/datasets/datasets/diabetic_retinopathy/test.txt
+[16:04:30] [DR] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:30] Layer resblock_0: mean=0.000014329
+[16:04:31] Layer resblock_1: mean=0.000016167
+[16:04:31] Layer resblock_2: mean=0.000017178
+[16:04:31] Layer resblock_3: mean=0.000018238
+[16:04:31] Layer resblock_4: mean=0.000018942
+[16:04:31] Layer resblock_5: mean=0.000019546
+[16:04:31] Layer resblock_6: mean=0.000019419
+[16:04:31] Layer resblock_7: mean=0.000018546
+[16:04:31] Layer resblock_8: mean=0.000016829
+[16:04:31] Layer resblock_9: mean=0.000014477
+[16:04:31] Layer resblock_10: mean=0.000014097
+[16:04:31] Layer resblock_11: mean=0.000006916
+[16:04:31] ✅ dr updated (N=1).
+[16:04:31] 
+🔍 Processing task: dtd (delta=1)
+[16:04:31] [DTD] Collected 5640 image paths from /root/autodl-tmp/modelselection/datasets/datasets/dtd/labels
+[16:04:31] [DTD] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:32] Layer resblock_0: mean=0.000009958
+[16:04:32] Layer resblock_1: mean=0.000010301
+[16:04:32] Layer resblock_2: mean=0.000010380
+[16:04:32] Layer resblock_3: mean=0.000010309
+[16:04:32] Layer resblock_4: mean=0.000010629
+[16:04:32] Layer resblock_5: mean=0.000010753
+[16:04:32] Layer resblock_6: mean=0.000011124
+[16:04:32] Layer resblock_7: mean=0.000011364
+[16:04:33] Layer resblock_8: mean=0.000011030
+[16:04:33] Layer resblock_9: mean=0.000010961
+[16:04:33] Layer resblock_10: mean=0.000011504
+[16:04:33] Layer resblock_11: mean=0.000005946
+[16:04:33] ✅ dtd updated (N=1).
+[16:04:33] 
+🔍 Processing task: eurosat (delta=1)
+[16:04:33] [EuroSAT] Collected 27000 images from 10 classes under /root/autodl-tmp/modelselection/datasets/datasets/eurosat/2750
+[16:04:33] [EuroSAT] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:33] Layer resblock_0: mean=0.000021157
+[16:04:33] Layer resblock_1: mean=0.000021648
+[16:04:33] Layer resblock_2: mean=0.000019970
+[16:04:33] Layer resblock_3: mean=0.000019109
+[16:04:34] Layer resblock_4: mean=0.000016852
+[16:04:34] Layer resblock_5: mean=0.000015888
+[16:04:34] Layer resblock_6: mean=0.000014629
+[16:04:34] Layer resblock_7: mean=0.000013355
+[16:04:34] Layer resblock_8: mean=0.000012762
+[16:04:34] Layer resblock_9: mean=0.000012263
+[16:04:34] Layer resblock_10: mean=0.000012072
+[16:04:34] Layer resblock_11: mean=0.000006287
+[16:04:34] ✅ eurosat updated (N=1).
+[16:04:34] 
+🔍 Processing task: fer2013 (delta=1)
+[16:04:34] [FER2013] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:34] Layer resblock_0: mean=0.000023239
+[16:04:34] Layer resblock_1: mean=0.000024036
+[16:04:35] Layer resblock_2: mean=0.000022999
+[16:04:35] Layer resblock_3: mean=0.000022128
+[16:04:35] Layer resblock_4: mean=0.000022072
+[16:04:35] Layer resblock_5: mean=0.000023028
+[16:04:35] Layer resblock_6: mean=0.000022652
+[16:04:35] Layer resblock_7: mean=0.000019992
+[16:04:35] Layer resblock_8: mean=0.000016539
+[16:04:35] Layer resblock_9: mean=0.000014879
+[16:04:36] Layer resblock_10: mean=0.000013170
+[16:04:36] Layer resblock_11: mean=0.000006962
+[16:04:36] ✅ fer2013 updated (N=1).
+[16:04:36] 
+🔍 Processing task: gtsrb (delta=1)
+[16:04:36] [GTSRB] Collected 12630 test images.
+[16:04:36] [GTSRB] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:36] Layer resblock_0: mean=0.000023932
+[16:04:36] Layer resblock_1: mean=0.000020917
+[16:04:36] Layer resblock_2: mean=0.000017229
+[16:04:36] Layer resblock_3: mean=0.000017048
+[16:04:36] Layer resblock_4: mean=0.000016551
+[16:04:36] Layer resblock_5: mean=0.000016995
+[16:04:37] Layer resblock_6: mean=0.000016541
+[16:04:37] Layer resblock_7: mean=0.000016166
+[16:04:37] Layer resblock_8: mean=0.000015086
+[16:04:37] Layer resblock_9: mean=0.000013872
+[16:04:37] Layer resblock_10: mean=0.000012364
+[16:04:37] Layer resblock_11: mean=0.000005962
+[16:04:37] ✅ gtsrb updated (N=1).
+[16:04:37] 
+🔍 Processing task: kitti (delta=1)
+[16:04:37] [KITTI] Collected 711 images from /root/autodl-tmp/modelselection/datasets/datasets/kitti/test.txt
+[16:04:37] [KITTI] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:37] Layer resblock_0: mean=0.000021257
+[16:04:37] Layer resblock_1: mean=0.000020936
+[16:04:38] Layer resblock_2: mean=0.000019967
+[16:04:38] Layer resblock_3: mean=0.000019638
+[16:04:38] Layer resblock_4: mean=0.000019529
+[16:04:38] Layer resblock_5: mean=0.000019495
+[16:04:38] Layer resblock_6: mean=0.000019114
+[16:04:38] Layer resblock_7: mean=0.000018670
+[16:04:38] Layer resblock_8: mean=0.000017718
+[16:04:39] Layer resblock_9: mean=0.000015980
+[16:04:39] Layer resblock_10: mean=0.000015257
+[16:04:39] Layer resblock_11: mean=0.000006880
+[16:04:39] ✅ kitti updated (N=1).
+[16:04:39] 
+🔍 Processing task: mnist (delta=1)
+[16:04:39] [MNIST] Loaded split='test' with 10000 samples from data/mnist
+[16:04:39] [MNIST] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+[16:04:39] Layer resblock_0: mean=0.000026886
+[16:04:39] Layer resblock_1: mean=0.000027205
+[16:04:39] Layer resblock_2: mean=0.000023657
+[16:04:39] Layer resblock_3: mean=0.000021655
+[16:04:39] Layer resblock_4: mean=0.000020685
+[16:04:40] Layer resblock_5: mean=0.000021084
+[16:04:40] Layer resblock_6: mean=0.000021164
+[16:04:40] Layer resblock_7: mean=0.000019509
+[16:04:40] Layer resblock_8: mean=0.000016963
+[16:04:40] Layer resblock_9: mean=0.000014938
+[16:04:40] Layer resblock_10: mean=0.000013365
+[16:04:41] Layer resblock_11: mean=0.000006750
+[16:04:41] ✅ mnist updated (N=1).
+[16:04:41] 
+🔍 Processing task: oxford_flowers (delta=1)
+[16:04:41] [OxfordFlowers] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:41] Layer resblock_0: mean=0.000018150
+[16:04:41] Layer resblock_1: mean=0.000018426
+[16:04:41] Layer resblock_2: mean=0.000018192
+[16:04:41] Layer resblock_3: mean=0.000017843
+[16:04:41] Layer resblock_4: mean=0.000017992
+[16:04:41] Layer resblock_5: mean=0.000018276
+[16:04:42] Layer resblock_6: mean=0.000018325
+[16:04:42] Layer resblock_7: mean=0.000017804
+[16:04:42] Layer resblock_8: mean=0.000016941
+[16:04:42] Layer resblock_9: mean=0.000016350
+[16:04:42] Layer resblock_10: mean=0.000015963
+[16:04:42] Layer resblock_11: mean=0.000007358
+[16:04:42] ✅ oxford_flowers updated (N=1).
+[16:04:42] 
+🔍 Processing task: oxford_pet (delta=1)
+[16:04:42] [OxfordPet] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:42] Layer resblock_0: mean=0.000021890
+[16:04:42] Layer resblock_1: mean=0.000023403
+[16:04:43] Layer resblock_2: mean=0.000023753
+[16:04:43] Layer resblock_3: mean=0.000025154
+[16:04:43] Layer resblock_4: mean=0.000025396
+[16:04:43] Layer resblock_5: mean=0.000025218
+[16:04:43] Layer resblock_6: mean=0.000023970
+[16:04:43] Layer resblock_7: mean=0.000021865
+[16:04:43] Layer resblock_8: mean=0.000020205
+[16:04:44] Layer resblock_9: mean=0.000017047
+[16:04:44] Layer resblock_10: mean=0.000016780
+[16:04:44] Layer resblock_11: mean=0.000007364
+[16:04:44] ✅ oxford_pet updated (N=1).
+[16:04:44] 
+🔍 Processing task: patch_camelyon (delta=1)
+[16:04:44] [PatchCamelyon] Collected 32768 image paths from /root/autodl-tmp/modelselection/datasets/datasets/patch_camelyon/test.txt
+[16:04:44] [PatchCamelyon] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:44] Layer resblock_0: mean=0.000018548
+[16:04:44] Layer resblock_1: mean=0.000017874
+[16:04:44] Layer resblock_2: mean=0.000017318
+[16:04:44] Layer resblock_3: mean=0.000016490
+[16:04:45] Layer resblock_4: mean=0.000014681
+[16:04:45] Layer resblock_5: mean=0.000015109
+[16:04:45] Layer resblock_6: mean=0.000014825
+[16:04:45] Layer resblock_7: mean=0.000014390
+[16:04:45] Layer resblock_8: mean=0.000014225
+[16:04:45] Layer resblock_9: mean=0.000013655
+[16:04:46] Layer resblock_10: mean=0.000013703
+[16:04:46] Layer resblock_11: mean=0.000007233
+[16:04:46] ✅ patch_camelyon updated (N=1).
+[16:04:46] 
+🔍 Processing task: renderedsst2 (delta=1)
+[16:04:46] [RenderedSST2] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:46] Layer resblock_0: mean=0.000028316
+[16:04:46] Layer resblock_1: mean=0.000026938
+[16:04:46] Layer resblock_2: mean=0.000025024
+[16:04:46] Layer resblock_3: mean=0.000021668
+[16:04:46] Layer resblock_4: mean=0.000021196
+[16:04:47] Layer resblock_5: mean=0.000021230
+[16:04:47] Layer resblock_6: mean=0.000021098
+[16:04:47] Layer resblock_7: mean=0.000020586
+[16:04:47] Layer resblock_8: mean=0.000019689
+[16:04:47] Layer resblock_9: mean=0.000018713
+[16:04:47] Layer resblock_10: mean=0.000018644
+[16:04:47] Layer resblock_11: mean=0.000006826
+[16:04:47] ✅ renderedsst2 updated (N=1).
+[16:04:47] 
+🔍 Processing task: resisc45 (delta=1)
+[16:04:47] [RESISC45] Collected 6300 images from /root/autodl-tmp/modelselection/datasets/datasets/resisc45/test.txt
+[16:04:47] [RESISC45] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:48] Layer resblock_0: mean=0.000021575
+[16:04:48] Layer resblock_1: mean=0.000021219
+[16:04:48] Layer resblock_2: mean=0.000020561
+[16:04:48] Layer resblock_3: mean=0.000019553
+[16:04:48] Layer resblock_4: mean=0.000018941
+[16:04:48] Layer resblock_5: mean=0.000017713
+[16:04:49] Layer resblock_6: mean=0.000017378
+[16:04:49] Layer resblock_7: mean=0.000017093
+[16:04:49] Layer resblock_8: mean=0.000016584
+[16:04:49] Layer resblock_9: mean=0.000015667
+[16:04:49] Layer resblock_10: mean=0.000015165
+[16:04:49] Layer resblock_11: mean=0.000007024
+[16:04:49] ✅ resisc45 updated (N=1).
+[16:04:49] 
+🔍 Processing task: stl10 (delta=1)
+[16:04:49] [STL10] Loaded 1 samples, tensor torch.Size([1, 3, 224, 224])
+[16:04:49] Layer resblock_0: mean=0.000020190
+[16:04:49] Layer resblock_1: mean=0.000020117
+[16:04:50] Layer resblock_2: mean=0.000019691
+[16:04:50] Layer resblock_3: mean=0.000019735
+[16:04:50] Layer resblock_4: mean=0.000019404
+[16:04:50] Layer resblock_5: mean=0.000019290
+[16:04:50] Layer resblock_6: mean=0.000018645
+[16:04:50] Layer resblock_7: mean=0.000018075
+[16:04:50] Layer resblock_8: mean=0.000017308
+[16:04:51] Layer resblock_9: mean=0.000015620
+[16:04:51] Layer resblock_10: mean=0.000015032
+[16:04:51] Layer resblock_11: mean=0.000006714
+[16:04:51] ✅ stl10 updated (N=1).
+[16:04:51] 
+🔍 Processing task: sun397 (delta=1)
+[16:04:51] [SUN397] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:51] Layer resblock_0: mean=0.000020143
+[16:04:51] Layer resblock_1: mean=0.000019668
+[16:04:51] Layer resblock_2: mean=0.000019130
+[16:04:51] Layer resblock_3: mean=0.000019421
+[16:04:51] Layer resblock_4: mean=0.000020479
+[16:04:52] Layer resblock_5: mean=0.000021601
+[16:04:52] Layer resblock_6: mean=0.000021361
+[16:04:52] Layer resblock_7: mean=0.000019655
+[16:04:52] Layer resblock_8: mean=0.000018240
+[16:04:52] Layer resblock_9: mean=0.000016846
+[16:04:52] Layer resblock_10: mean=0.000015837
+[16:04:52] Layer resblock_11: mean=0.000006724
+[16:04:52] ✅ sun397 updated (N=1).
+[16:04:52] 
+🔍 Processing task: svhn (delta=1)
+[16:04:52] [SVHN] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:53] Layer resblock_0: mean=0.000022301
+[16:04:53] Layer resblock_1: mean=0.000021596
+[16:04:53] Layer resblock_2: mean=0.000017974
+[16:04:53] Layer resblock_3: mean=0.000016992
+[16:04:53] Layer resblock_4: mean=0.000015255
+[16:04:53] Layer resblock_5: mean=0.000015204
+[16:04:53] Layer resblock_6: mean=0.000014917
+[16:04:53] Layer resblock_7: mean=0.000014807
+[16:04:53] Layer resblock_8: mean=0.000013860
+[16:04:54] Layer resblock_9: mean=0.000012537
+[16:04:54] Layer resblock_10: mean=0.000011981
+[16:04:54] Layer resblock_11: mean=0.000006668
+[16:04:54] ✅ svhn updated (N=1).
+[16:04:54] 
+🔍 Processing task: voc_pose (delta=1)
+[16:04:54] [VOC] Loaded 1 samples (skipped 0), tensor torch.Size([1, 3, 224, 224])
+[16:04:54] Layer resblock_0: mean=0.000019507
+[16:04:54] Layer resblock_1: mean=0.000020463
+[16:04:54] Layer resblock_2: mean=0.000020261
+[16:04:54] Layer resblock_3: mean=0.000020515
+[16:04:54] Layer resblock_4: mean=0.000020886
+[16:04:55] Layer resblock_5: mean=0.000021376
+[16:04:55] Layer resblock_6: mean=0.000020756
+[16:04:55] Layer resblock_7: mean=0.000020085
+[16:04:55] Layer resblock_8: mean=0.000019311
+[16:04:55] Layer resblock_9: mean=0.000016917
+[16:04:56] Layer resblock_10: mean=0.000015767
+[16:04:56] Layer resblock_11: mean=0.000007352
+[16:04:56] ✅ voc_pose updated (N=1).
+[16:04:56] ✅ Results saved for milestone 1.

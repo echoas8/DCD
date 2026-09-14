@@ -1,0 +1,29 @@
+# GROUP A SUM_FLOPs=755.27
+ViT-H-14-quickgelu,metaclip_fullcc,381.68 | convnext_large_d_320,laion2b_s29b_b131k_ft,157.98 | convnext_base_w,laion2b_s13b_b82k,49.38 | ViT-B-16,laion2b_s34b_b88k,41.09 | ViT-B-16,datacomp_l_s1b_b8k,41.09 | ViT-B-16-quickgelu,metaclip_fullcc,41.09 | RN101-quickgelu,openai,25.5 | ViT-B-32-256,datacomp_s34b_b86k,17.46
+
+# GROUP B SUM_FLOPs=769.10
+ViT-L-14,openai,175.33 | ViT-L-14,datacomp_xl_s13b_b90k,175.33 | ViT-L-14-quickgelu,metaclip_fullcc,175.33 | roberta-ViT-B-32,laion2b_s12b_b32k,105.87 | ViT-B-16,commonpool_l_laion_s1b_b8k,41.09 | EVA02-B-16,merged2b_s8b_b131k,41.09 | RN101-quickgelu,yfcc15m,25.5 | ViT-B-32,laion2b_e16,14.78 | ViT-B-32,commonpool_m_clip_s128m_b4k,14.78
+
+# GROUP C SUM_FLOPs=764.75
+ViT-L-14,laion400m_e31,175.33 | ViT-L-14,commonpool_xl_clip_s13b_b90k,175.33 | ViT-L-14-quickgelu,dfn2b,175.33 | xlm-roberta-base-ViT-B-32,laion5b_s13b_b90k,105.87 | ViT-B-16,dfn2b,41.09 | coca_ViT-B-32,laion2b_s13b_b90k,33.34 | RN101,yfcc15m,25.5 | RN50,cc12m,18.18 | ViT-B-32,datacomp_xl_s13b_b90k,14.78
+
+# GROUP D SUM_FLOPs=1054.05
+ViT-H-14-378-quickgelu,dfn5b,1054.05
+
+# GROUP E SUM_FLOPs=1065.36
+ViT-bigG-14,laion2b_s39b_b160k,1065.36
+
+# GROUP F SUM_FLOPs=994.55
+ViT-g-14,laion2b_s12b_b42k,581.15 | ViT-L-14-336,openai,395.22 | RN50,openai,18.18
+
+# GROUP G SUM_FLOPs=995.68
+RN50x64,openai,552.65 | convnext_xxlarge,laion2b_s34b_b82k_augreg_soup,443.03
+
+# GROUP H SUM_FLOPs=994.34
+EVA01-g-14,laion400m_s11b_b41k,547.36 | EVA02-L-14-336,merged2b_s6b_b61k,395.16 | RN50x4,openai,51.82
+
+# GROUP I SUM_FLOPs=987.59
+nllb-clip-base-siglip,v1,472.91 | ViT-H-14,laion2b_s32b_b79k,381.68 | convnext_large_d,laion2b_s26b_b102k_augreg,107.5 | RN101,openai,25.5
+
+# GROUP J SUM_FLOPs=805.52
+nllb-clip-base,v1,369.6 | coca_ViT-L-14,laion2b_s13b_b90k,214.52 | convnext_base_w_320,laion_aesthetic_s13b_b82k,71.94 | ViT-B-16-plus-240,laion400m_e31,64.03 | ViT-B-16,openai,41.09 | ViT-B-32,openai,14.78 | ViT-B-32-quickgelu,laion400m_e31,14.78 | ViT-B-32-quickgelu,metaclip_fullcc,14.78

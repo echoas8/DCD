@@ -1,0 +1,76 @@
+{
+  "cfg": {
+    "model": {
+      "name": "EVA02-L-14-336",
+      "pretrained": "merged2b_s6b_b61k"
+    },
+    "run": {
+      "seed": 42,
+      "gpu_id": "0",
+      "n_per_task": 300,
+      "batch_size": 1,
+      "output_dir": "results",
+      "milestones": [
+        25,
+        50,
+        75,
+        100,
+        125,
+        150,
+        200,
+        300
+      ]
+    },
+    "tasks": [
+      "car",
+      "cifar",
+      "clevr",
+      "country",
+      "dmlab",
+      "dr",
+      "dtd",
+      "eurosat",
+      "fer2013",
+      "gtsrb",
+      "kitti",
+      "mnist",
+      "oxford_flowers",
+      "oxford_pet",
+      "patch_camelyon",
+      "renderedsst2",
+      "resisc45",
+      "stl10",
+      "sun397",
+      "svhn",
+      "voc_pose"
+    ]
+  },
+  "layer_names": [
+    "block_0",
+    "block_1",
+    "block_2",
+    "block_3",
+    "block_4",
+    "block_5",
+    "block_6",
+    "block_7",
+    "block_8",
+    "block_9",
+    "block_10",
+    "block_11",
+    "block_12",
+    "block_13",
+    "block_14",
+    "block_15",
+    "block_16",
+    "block_17",
+    "block_18",
+    "block_19",
+    "block_20",
+    "block_21",
+    "block_22",
+    "block_23",
+    "head"
+  ],
+  "milestone": 100
+}
